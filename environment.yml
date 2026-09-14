@@ -1,0 +1,16 @@
+name: pathofind
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - sra-tools
+  - fastp
+  - fastqc
+  - multiqc
+  - bowtie2
+  - samtools
+  - kraken2
+  - bracken
+  - pigz

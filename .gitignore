@@ -47,3 +47,16 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+# --- Bioinformatyczne pliki danych i baz (NIGDY nie trafiają na GitHub!) ---
+data/
+*.fastq
+*.fastq.gz
+*.fq
+*.bam
+*.sam
+*.bt2
+*.k2d
+
+# --- Logi i pliki tymczasowe ---
+logs/
+*.log
