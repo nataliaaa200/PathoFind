@@ -23,4 +23,4 @@
 - **Actions:**
   - Downloading human reference index for Bowtie2 (`GRCh38_noalt_as`).
   - Fetching initial test dataset (`SRR8484832`) via `fasterq-dump`.
-# test połączenia Thu Sep 17 13:53:36 CEST 2026
+
