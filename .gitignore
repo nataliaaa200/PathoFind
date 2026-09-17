@@ -60,3 +60,11 @@ data/
 # --- Logi i pliki tymczasowe ---
 logs/
 *.log
+
+# PCSS Symlinks & Output Folders
+data/raw
+data/host_depleted
+data/metadata
+data/ref_genomes
+results/
+logs/

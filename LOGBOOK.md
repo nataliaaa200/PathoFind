@@ -1,26 +1,28 @@
-# Project Execution Logbook — PathoFind
+# PathoFind Project Logbook
 
-## Project Overview
-- **Objective:** Benchmarking Clinical mNGS Pathogen Detection in Cerebrospinal Fluid (Reproducing Miller et al., 2019)
-- **Dataset:** BioProject PRJNA516289 (NCBI SRA)
-- **Reference Paper:** Miller et al. (2019), *Genome Research* (PMID: 30992304)
+## Date: 17.09.2026
+**Author:** Natalia (`nati22`)
+**Cluster:** PCSS Eagle (`eagle`)
+**Environment:** `pathofind` (/mnt/storage_6/project_data/pl1038-01/nati22/miniconda3/envs/pathofind)
 
 ---
 
-## Benchmark Log
+### Accomplishments Today:
+- **Storage Optimization:** Solved disk quota issues by creating a clean symlink architecture between scratch working space (`/scratch/PathoFind`) and persistent high-capacity storage (`/project_data/PathoFind/`).
+- **Symlink Map Verified:**
+  - `data/raw/` -> `/project_data/.../data/raw`
+  - `data/host_depleted/` -> `/project_data/.../data/host_depleted`
+  - `data/metadata/` -> `/project_data/.../data/metadata`
+  - `data/ref_genomes/` -> `/project_data/.../ref_genomes`
+  - `results/` -> `/project_data/.../results` (includes `qc`, `kraken2`, `bracken`, `r_analysis`, `multiqc`)
+  - `logs/` -> `/project_data/.../logs`
+- **Reference Genomes:** Downloaded and extracted human reference index `GRCh38` for Bowtie2.
+- **Environment:** Verified active `pathofind` conda environment.
 
-### Entry 001 — Environment & Repository Setup
-- **Date:** 2026-09-16
-- **Status:** Completed
-- **Actions:**
-  - Repository structure initialized (`data/`, `results/`, `scripts/`, `logs/`).
-  - Conda environment file `environment.yml` created with explicit dependencies.
-  - Remote integration with PCSS cluster established.
+---
 
-### Entry 002 — Reference Human Genome (GRCh38) & Test Download
-- **Date:** 2026-09-16
-- **Status:** In Progress
-- **Actions:**
-  - Downloading human reference index for Bowtie2 (`GRCh38_noalt_as`).
-  - Fetching initial test dataset (`SRR8484832`) via `fasterq-dump`.
-
+### Plan for Next Session:
+1. Activate environment: `conda activate pathofind`.
+2. Download test fastq samples (1-2 runs from PRJNA516289) into `data/raw/` using `fasterq-dump`.
+3. Fetch MiniKraken2 test database into `data/ref_genomes/`.
+4. Run dry-run and test batch pipeline execution.
