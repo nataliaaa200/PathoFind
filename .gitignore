@@ -68,3 +68,5 @@ data/metadata
 data/ref_genomes
 results/
 logs/
+logs
+results
