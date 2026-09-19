@@ -29,12 +29,12 @@
 
 ---
 
-**Date:** 18.09.2026  
+##Date: 18.09.2026  
 **Author:** Natalia (nati22)  
 **Cluster:** PCSS Eagle (eagle)  
 **Environment:** pathofind (`/mnt/storage_6/project_data/pl1038-01/nati22/miniconda3/envs/pathofind`)
 
-Accomplishments Today:
+###Accomplishments Today:
 
 1. Repository & Version Control Setup:
    - Configured `.gitignore` to prevent tracking large bioinformatics outputs (`.fastq.gz`, `.bam`, `.k2d`, `data/`).
