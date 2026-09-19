@@ -52,3 +52,26 @@ Plan for Next Session:
 2. Execute quality control and adapter trimming using `fastp`.
 3. Perform host depletion against GRCh38 using `bowtie2`.
 4. Run taxonomic classification via `kraken2` / `bracken`.
+
+## Date: September 19, 2026
+**Author:** Natalia (`nati22`)
+**Cluster:** PCSS Eagle (`eagle`)
+**Environment:** `pathofind`
+
+---
+
+### Accomplishments Today:
+- **Raw Data Verification:** Checked and confirmed input raw FASTQ files (`SRR8580951.fastq.gz`, `SRR8580952.fastq.gz`) in `data/raw/`.
+- **Host Depletion (Bowtie2):** 
+  - Successfully executed Bowtie2 against the human reference genome (`GRCh38`) for sample `SRR8580952`.
+  - Generated cleaned, host-depleted paired-end reads:
+    - `data/host_depleted/SRR8580952_clean_1.fastq.gz`
+    - `data/host_depleted/SRR8580952_clean_2.fastq.gz`
+- **Pipeline Milestone:** Completed quality control and host depletion phases. Data is fully prepped for taxonomic classification.
+
+---
+
+### Next Steps for Today:
+1. Run **Kraken2** taxonomic classification on the cleaned reads (`SRR8580952`) using the reference database.
+2. Estimate species-level abundance using **Bracken**.
+3. Inspect and parse the generated Kraken2/Bracken reports.
