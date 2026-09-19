@@ -29,12 +29,12 @@
 
 ---
 
-##Date: 18.09.2026  
+## Date: 18.09.2026  
 **Author:** Natalia (nati22)  
 **Cluster:** PCSS Eagle (eagle)  
 **Environment:** pathofind (`/mnt/storage_6/project_data/pl1038-01/nati22/miniconda3/envs/pathofind`)
 
-###Accomplishments Today:
+### Accomplishments Today:
 
 1. Repository & Version Control Setup:
    - Configured `.gitignore` to prevent tracking large bioinformatics outputs (`.fastq.gz`, `.bam`, `.k2d`, `data/`).
@@ -46,7 +46,9 @@
    - Developed `scripts/00_prepare_metadata.py` to trim `_DNA`/`_RNA` suffixes and merge diagnostic labels with SRA run IDs.
    - Verified metadata integration: mapped 190 SRR runs across 95 patient samples into `data/metadata/samples_ground_truth.csv`.
 
-Plan for Next Session:
+---
+
+### Plan for Next Session:
 
 1. Download representative test FASTQ files (e.g., SRR8580952, SRR8580951) using `fasterq-dump` and compress with `pigz`.
 2. Execute quality control and adapter trimming using `fastp`.
