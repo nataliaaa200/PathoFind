@@ -29,10 +29,10 @@
 
 ---
 
-Date: 18.09.2026
-Author: Natalia (nati22)
-Cluster: PCSS Eagle (eagle)
-Environment: pathofind (/mnt/storage_6/project_data/pl1038-01/nati22/miniconda3/envs/pathofind)
+**Date:** 18.09.2026  
+**Author:** Natalia (nati22)  
+**Cluster:** PCSS Eagle (eagle)  
+**Environment:** pathofind (`/mnt/storage_6/project_data/pl1038-01/nati22/miniconda3/envs/pathofind`)
 
 Accomplishments Today:
 
